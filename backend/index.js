@@ -12,7 +12,7 @@ async function predict() {
 
             return predictions
         });
-        
+        console.log(await predictedvalue.data())
         var probality = (await predictedvalue.data())[0];
 
         if (probality > 0.45) {
