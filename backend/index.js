@@ -2,7 +2,7 @@ const webcam = new Webcam(document.getElementById('webcam'));
 
 let isPredicting = false;
 async function predict() {
-    const model = await tf.loadLayersModel("http://127.0.0.1:8887/backend/model.json")
+    const model = await tf.loadLayersModel("https://hoangcaobao.github.io/khautrang/backend/model.json")
     while (isPredicting) {
         const predictedvalue = tf.tidy(() => {
             const img = webcam.capture();
