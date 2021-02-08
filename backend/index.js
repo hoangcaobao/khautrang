@@ -15,7 +15,7 @@ async function predict() {
         
         var probality = (await predictedvalue.data())[0];
 
-        if (probality > 0.6) {
+        if (probality > 0.4) {
             probality = 2
         } else if (probality > 0.02) {
             probality = 1
