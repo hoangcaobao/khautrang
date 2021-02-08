@@ -1,0 +1,36 @@
+<html>
+<head>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"> </script>
+<script src="./backend/webcam.js"></script>
+<style>
+.center {
+	margin: auto;
+	width: 28%;
+	
+	}
+.center1 {
+	margin: auto;
+	width: 20%;
+	
+	}
+</style>
+</head>
+<body>
+	<div class="center">
+    <div>KIỂM TRA CÁCH ĐEO KHẨU TRANG</div>
+	</div>
+	<div class="center1">
+		<div>
+			<video autoplay playsinline muted id="webcam" width="210" height="210"></video>
+		</div>
+	</div>
+	
+	<div class="center1">
+	<button type="button" id="startPredicting" onclick="startPredicting()" >KIỂM TRA</button>
+	<button type="button" id="stopPredicting" onclick="stopPredicting()" >DỪNG KIỂM TRA</button>
+	<div id="prediction"></div>
+	</div>
+</body>
+
+<script src="./backend/index.js"></script>
+</html>
