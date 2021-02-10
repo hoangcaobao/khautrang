@@ -27,14 +27,14 @@ async function predict() {
         var predictionText = "";
         switch (probality) {
             case 0:
-                predictionText = "Chưa đeo";
+                predictionText = "DONT WEAR";
                 break;
             case 1:
-                predictionText = "Nhớ đeo che mũi";
+                predictionText = "WEAR INCORRECTLY";
 
                 break;
             case 2:
-                alert("CHÚC MỪNG. BẠN ĐÃ ĐEO ĐÚNG CÁCH")
+                alert("CONGRATULATION. YOU WEAR CORRECTLY")
                 isPredicting = false;
 
                 break;
